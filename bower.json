@@ -1,0 +1,21 @@
+{
+  "name": "angular-table-to-csv",
+  "description": "Export a HTML table to CSV",
+  "main": "dist/table-to-csv.js",
+  "authors": [
+    "Tom Vincent <git@tlvince.com> (https://tlvince.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "table",
+    "csv"
+  ],
+  "homepage": "https://tlvince.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

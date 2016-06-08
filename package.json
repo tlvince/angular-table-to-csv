@@ -1,0 +1,42 @@
+{
+  "name": "angular-table-to-csv",
+  "version": "0.0.0",
+  "description": "Export a HTML table to CSV",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "ng-annotate -a index.js > dist/table-to-csv.js",
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlvince/angular-table-to-csv.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com)",
+  "engines": {
+    "node": ">=4"
+  },
+  "bugs": {
+    "url": "https://github.com/tlvince/angular-table-to-csv/issues"
+  },
+  "homepage": "https://github.com/tlvince/angular-table-to-csv#readme",
+  "dependencies": {
+    "ng-annotate": "^1.2.1"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "angular",
+      "Blob"
+    ]
+  }
+}
