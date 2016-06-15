@@ -40,7 +40,7 @@ angular.module('tv.tableToCsv', [])
           for (var i = 0; i < table.rows.length; i++) {
             var rowData = table.rows[i].cells
             for (var j = 0; j < rowData.length; j++) {
-              csv = csv + rowData[j].innerText + ','
+              csv = csv + rowData[j].textContent.trim() + ','
             }
             csv = csv.substring(0, csv.length - 1)
             csv = csv + '\n'
