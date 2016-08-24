@@ -36,6 +36,13 @@ angular.module('tv.tableToCsv', [])
 
         element.bind('click', function (e) {
           var table = e.target.previousElementSibling
+          if (!table || !table.rows) {
+            var tables = table.getElementsByTagName('table')
+            if (!tables.length || !tables[0].rows) {
+              return
+            }
+            table = tables[0]
+          }
           var csv = ''
           for (var i = 0; i < table.rows.length; i++) {
             var rowData = table.rows[i].cells
