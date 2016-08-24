@@ -1,6 +1,6 @@
 {
   "name": "angular-table-to-csv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Export a HTML table to CSV",
   "main": "index.js",
   "scripts": {
