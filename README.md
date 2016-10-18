@@ -40,6 +40,13 @@ angular.module('app', [
 
 <button table-to-csv>Export</button>
 ```
+to add filename dynamically, add title attribute to the button
+```
+  .....
+  <button table-to-csv csv-title="{table-title}">Export</button>
+```
+filename will be `{table-title}.csv`. 
+If the `csv-title` attribute is omitted filename will be `table-to-csv.csv`
 
 ## Author
 
