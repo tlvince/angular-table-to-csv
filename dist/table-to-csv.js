@@ -36,6 +36,7 @@ angular.module('tv.tableToCsv', [])
 
         element.bind('click', function (e) {
           var table = e.target.previousElementSibling
+          var filename = attrs.csvTitle || 'table-to-csv'
           if (!table || !table.rows) {
             var tables = table.getElementsByTagName('table')
             if (!tables.length || !tables[0].rows) {
@@ -53,7 +54,7 @@ angular.module('tv.tableToCsv', [])
             csv = csv + '\n'
           }
           csv = csv.substring(0, csv.length - 1)
-          download(csv, 'data.csv')
+          download(csv, filename + '.csv')
         })
       }
     }
